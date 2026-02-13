@@ -1,0 +1,70 @@
+/*
+Theme Name: My Custom Theme
+Author: Vidhi
+Version: 1.0
+*/
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'DM Sans';
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+.container-wrp {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.btn-primary {
+	background-color: #EC4700;
+    color: #FFFFFF;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.375;
+    letter-spacing: -0.2px;
+	text-decoration: unset;
+    border-radius: 8px;
+}
