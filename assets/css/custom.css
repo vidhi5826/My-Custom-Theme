@@ -1,0 +1,315 @@
+/********** START HEADER CSS **********/
+.admin-bar .site-header {
+    margin-top: 32px;
+}
+/* Header Styles */
+.site-header {
+    top: 0;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 23px;
+}
+.site-header-left {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px 62px;
+}
+.site-logo a {
+    display: inline-block;
+}
+.site-logo img {
+    max-height: 120px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center center;
+}
+.site-logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+}
+/* Navigation Menu */
+.main-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.primary-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.primary-menu li {
+    position: relative;
+}
+
+.primary-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.primary-menu a:hover {
+    color: #0073aa;
+}
+
+/* Dropdown Menu */
+.primary-menu .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 200px;
+    list-style: none;
+    margin: 0;
+}
+
+.primary-menu li:hover .sub-menu {
+    display: block;
+}
+
+.primary-menu .sub-menu li {
+    padding: 0;
+}
+
+.primary-menu .sub-menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Header Guarantee Text */
+.header-guarantee {
+    font-size: 14px;
+    color: #666;
+}
+
+.header-guarantee p {
+    margin: 0;
+}
+
+/* Header Button */
+/* .header-button .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0073aa;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+} */
+
+.header-button .btn:hover {
+    background: #005a87;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: 0.3s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        order: 3;
+    }
+
+    .site-logo {
+        order: 1;
+    }
+
+    .header-guarantee {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .main-navigation {
+        order: 4;
+        width: 100%;
+        display: none;
+    }
+
+    .main-navigation.active {
+        display: block;
+    }
+
+    .primary-menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .primary-menu li {
+        border-bottom: 1px solid #eee;
+    }
+
+    .primary-menu a {
+        display: block;
+        padding: 15px;
+    }
+
+    .header-button {
+        order: 5;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .header-button .btn {
+        width: 100%;
+    }
+}
+/*********** END HEADER CSS ***********/
+
+
+
+
+a.button {
+    background-color: #EC4700;
+    color: #FFFFFF;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.375;
+    letter-spacing: -0.2px;
+	text-decoration: unset;
+    border-radius: 8px;
+}
+section.home-banner-section {
+    background-color: #F4F4F4;
+    background-image: url('http://localhost/acf-wordpress/wp-content/uploads/2026/01/banner-bg-img.png');
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto;
+}
+.home-banner-content-wrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.banner-content-left-wrp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 100px 20px;
+    width: 100%;
+    max-width: 777px;
+	padding: 127px 0 42px 0;
+}
+.banner-image-right-wrp {
+    width: 100%;
+    max-width: fit-content;
+    line-height: 0;
+}
+img.video-lightbox-trigger {
+    width: 100%;
+    max-width: 447px;
+    aspect-ratio: 447 / 740;
+    object-fit: cover;
+    object-position: center center;
+    outline: 4px solid #EC4700;
+    outline-offset: -4px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 10px #EC470033;
+}
+.banner-content-title {
+    font-family: 'DM Sans';
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.3em;
+    letter-spacing: -3px;
+}
+.banner-content-title span {
+    color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF4D 78%, #EC47004D 94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    /* background-color: #ec4700; */
+    padding: 0 15px;
+}
+.banner-content-icon-text {
+    padding-top: 80px;
+}
+.banner-content-icon-text p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px 18px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0;
+}
+.banner-content-left-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px 24px;
+}
+.banner-content-left-bottom a.button {
+    min-width: 186px;
+}
+.banner-content-guarantee-text p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5.4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: -0.2px;
+}
